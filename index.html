@@ -3,417 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Lab1 — статичний веб-проєкт з HTML, CSS та TypeScript. Демонструє сучасний дизайн та інтерактивність."
-    />
-    <title>Lab1 — Веб-технології</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Лабораторна робота №1 з веб-технологій" />
+    <title>Lab 1 — Веб-технології</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <span class="logo-icon">⚡</span>
-          <span>Lab<span class="accent">1</span></span>
-        </div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#hero" class="nav-link active" id="nav-hero">Головна</a></li>
-          <li><a href="#technologies" class="nav-link" id="nav-tech">Технології</a></li>
-          <li><a href="#features" class="nav-link" id="nav-features">Функції</a></li>
-          <li><a href="#demo" class="nav-link" id="nav-demo">Демо</a></li>
-        </ul>
-        <button class="burger" id="burger-btn" aria-label="Відкрити меню">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
+    <header>
+      <h1>Лабораторна робота №1</h1>
+      <p>Веб-технології · 3 курс · 2026</p>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="hero-bg">
-        <div class="particle" id="p1"></div>
-        <div class="particle" id="p2"></div>
-        <div class="particle" id="p3"></div>
-        <div class="particle" id="p4"></div>
-        <div class="particle" id="p5"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-badge" id="hero-badge">🎓 Лабораторна робота №1</div>
-        <h1 class="hero-title" id="hero-title">
-          Сучасний<br /><span class="gradient-text">веб-проєкт</span>
-        </h1>
-        <p class="hero-description" id="hero-desc">
-          Демонстрація HTML5, CSS3, TypeScript, ESLint, Prettier, GitHub Pages та Vercel у межах
-          однієї лабораторної роботи з веб-технологій.
+    <main>
+      <section id="about">
+        <h2>Про проєкт</h2>
+        <p>
+          Статичний веб-проєкт, виконаний у межах лабораторної роботи з курсу «Веб-технології».
+          Використано HTML5, CSS3, TypeScript, ESLint та Prettier.
         </p>
-        <div class="hero-buttons">
-          <a href="#technologies" class="btn btn-primary" id="btn-explore">Дослідити</a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline"
-            id="btn-github"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
-              />
-            </svg>
-            GitHub
-          </a>
+      </section>
+
+      <section id="stack">
+        <h2>Технологічний стек</h2>
+        <ul>
+          <li><strong>HTML5</strong> — семантична розмітка</li>
+          <li><strong>CSS3</strong> — стилізація, змінні, адаптивність</li>
+          <li><strong>TypeScript</strong> — статична типізація</li>
+          <li><strong>ESLint</strong> — аналіз коду</li>
+          <li><strong>Prettier</strong> — форматування</li>
+          <li><strong>Git</strong> — контроль версій</li>
+        </ul>
+      </section>
+
+      <section id="tools">
+        <h2>Версії інструментів</h2>
+        <ul>
+          <li>Node.js v24.14.1</li>
+          <li>npm v11.11.0</li>
+          <li>Git v2.55.0</li>
+          <li>TypeScript v7.0.2</li>
+          <li>ESLint v10.10.0</li>
+          <li>Prettier v3.9.7</li>
+        </ul>
+      </section>
+
+      <section id="demo">
+        <h2>Демо: лічильник</h2>
+        <p id="counter-value">0</p>
+        <div id="counter-controls">
+          <button id="btn-dec">−</button>
+          <button id="btn-reset">Скинути</button>
+          <button id="btn-inc">+</button>
         </div>
-        <div class="hero-stats" id="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number" id="stat-lines">0</span>
-            <span class="stat-label">рядків коду</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" id="stat-tech">0</span>
-            <span class="stat-label">технологій</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" id="stat-files">0</span>
-            <span class="stat-label">файлів</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual" id="hero-visual">
-        <div class="code-window" id="code-window">
-          <div class="window-header">
-            <div class="window-dots">
-              <span class="dot dot-red" id="dot-r"></span>
-              <span class="dot dot-yellow" id="dot-y"></span>
-              <span class="dot dot-green" id="dot-g"></span>
-            </div>
-            <span class="window-title">script.ts</span>
-          </div>
-          <div class="window-body">
-            <div class="code-line">
-              <span class="code-keyword">interface</span> <span class="code-type">Project</span>
-              <span class="code-bracket">{</span>
-            </div>
-            <div class="code-line code-indent">
-              <span class="code-prop">name</span><span class="code-punct">:</span>
-              <span class="code-type">string</span><span class="code-punct">;</span>
-            </div>
-            <div class="code-line code-indent">
-              <span class="code-prop">tech</span><span class="code-punct">:</span>
-              <span class="code-type">string</span><span class="code-punct">[];</span>
-            </div>
-            <div class="code-line code-indent">
-              <span class="code-prop">year</span><span class="code-punct">:</span>
-              <span class="code-type">number</span><span class="code-punct">;</span>
-            </div>
-            <div class="code-line"><span class="code-bracket">}</span></div>
-            <div class="code-line">&nbsp;</div>
-            <div class="code-line">
-              <span class="code-keyword">const</span> <span class="code-var">lab</span
-              ><span class="code-punct">:</span> <span class="code-type">Project</span>
-              <span class="code-punct">=</span> <span class="code-bracket">{</span>
-            </div>
-            <div class="code-line code-indent">
-              <span class="code-prop">name</span><span class="code-punct">:</span>
-              <span class="code-string">"Lab1"</span><span class="code-punct">,</span>
-            </div>
-            <div class="code-line code-indent">
-              <span class="code-prop">tech</span><span class="code-punct">:</span>
-              <span class="code-bracket">[</span><span class="code-string">"HTML"</span
-              ><span class="code-punct">,</span> <span class="code-string">"CSS"</span
-              ><span class="code-punct">,</span> <span class="code-string">"TS"</span
-              ><span class="code-bracket">]</span><span class="code-punct">,</span>
-            </div>
-            <div class="code-line code-indent">
-              <span class="code-prop">year</span><span class="code-punct">:</span>
-              <span class="code-number">2026</span>
-            </div>
-            <div class="code-line">
-              <span class="code-bracket">}</span><span class="code-punct">;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Technologies Section -->
-    <section class="technologies" id="technologies">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Стек</span>
-          <h2 class="section-title" id="tech-title">Технологічний стек</h2>
-          <p class="section-desc">Перевірені та сучасні інструменти розробки</p>
-        </div>
-        <div class="tech-grid" id="tech-grid">
-          <div class="tech-card" id="card-html" data-delay="0">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
-                />
-              </svg>
-            </div>
-            <h3 class="tech-name">HTML5</h3>
-            <p class="tech-desc">Семантична розмітка, SEO-оптимізація, доступність</p>
-            <div class="tech-badge">✓ Встановлено</div>
-          </div>
+      <section id="clock-section">
+        <h2>Поточний час</h2>
+        <p id="clock">--:--:--</p>
+        <p id="date-display"></p>
+      </section>
 
-          <div class="tech-card" id="card-css" data-delay="100">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.413z"
-                />
-              </svg>
-            </div>
-            <h3 class="tech-name">CSS3</h3>
-            <p class="tech-desc">Змінні CSS, Grid, Flexbox, анімації, glassmorphism</p>
-            <div class="tech-badge">✓ Встановлено</div>
-          </div>
-
-          <div class="tech-card" id="card-ts" data-delay="200">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.255a1.01 1.01 0 0 0 .368-.39.997.997 0 0 0 .122-.49c0-.234-.058-.435-.173-.605a1.614 1.614 0 0 0-.477-.453 6.634 6.634 0 0 0-.686-.396l-.866-.399c-.565-.256-1.026-.523-1.384-.8a3.243 3.243 0 0 1-.87-1.016 2.716 2.716 0 0 1-.298-1.297c0-.662.12-1.213.358-1.651.24-.439.566-.804.98-1.095.413-.291.895-.496 1.444-.614.549-.12 1.136-.18 1.76-.18zm-5.116 3.375H14.45v8.25H11.75v-8.25H9.25v-2.25h7.5v2.25z"
-                />
-              </svg>
-            </div>
-            <h3 class="tech-name">TypeScript</h3>
-            <p class="tech-desc">Статична типізація, інтерфейси, покращений DX</p>
-            <div class="tech-badge">✓ Встановлено</div>
-          </div>
-
-          <div class="tech-card" id="card-eslint" data-delay="300">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M7.257 9.132L11.816 6.5a.369.369 0 0 1 .368 0l4.559 2.632a.369.369 0 0 1 .184.32v5.263a.37.37 0 0 1-.184.32l-4.559 2.632a.369.369 0 0 1-.368 0l-4.559-2.632a.369.369 0 0 1-.184-.32V9.452a.37.37 0 0 1 .184-.32M23.852 11.53l-5.446-9.475a.62.62 0 0 0-.538-.312H6.132a.62.62 0 0 0-.538.312L.148 11.53a.623.623 0 0 0 0 .625l5.446 9.468a.621.621 0 0 0 .538.312h11.736a.62.62 0 0 0 .538-.312l5.446-9.468a.624.624 0 0 0 0-.625"
-                />
-              </svg>
-            </div>
-            <h3 class="tech-name">ESLint</h3>
-            <p class="tech-desc">Статичний аналіз коду, виявлення помилок, правила</p>
-            <div class="tech-badge">✓ Встановлено</div>
-          </div>
-
-          <div class="tech-card" id="card-prettier" data-delay="400">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M8.571 23.429A.571.571 0 0 1 8 24H2.286a.571.571 0 0 1 0-1.143H8c.316 0 .571.256.571.572zM8 20.57H6.857a.571.571 0 0 0 0 1.143H8a.571.571 0 0 0 0-1.143zm-5.714 1.143H4.57a.571.571 0 0 0 0-1.143H2.286a.571.571 0 0 0 0 1.143zM8 18.286H2.286a.571.571 0 0 0 0 1.143H8a.571.571 0 0 0 0-1.143zM16 16H2.286a.571.571 0 0 0 0 1.143H16A.571.571 0 0 0 16 16zm0-2.286H2.286a.571.571 0 0 0 0 1.143H16a.571.571 0 0 0 0-1.143zm0-2.285H2.286a.571.571 0 0 0 0 1.142H16a.571.571 0 0 0 0-1.142zM21.714 9.14H2.286a.571.571 0 0 0 0 1.144h19.428a.571.571 0 0 0 0-1.144zM16 6.857H2.286a.571.571 0 0 0 0 1.143H16a.571.571 0 0 0 0-1.143zm5.714-2.286H2.286a.571.571 0 0 0 0 1.143h19.428a.571.571 0 0 0 0-1.143zM21.714 2.286H2.286a.571.571 0 0 0 0 1.143h19.428a.571.571 0 0 0 0-1.143zM21.714 0H2.286a.571.571 0 0 0 0 1.143h19.428a.571.571 0 0 0 0-1.143z"
-                />
-              </svg>
-            </div>
-            <h3 class="tech-name">Prettier</h3>
-            <p class="tech-desc">Автоматичне форматування, консистентний стиль коду</p>
-            <div class="tech-badge">✓ Встановлено</div>
-          </div>
-
-          <div class="tech-card" id="card-git" data-delay="500">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"
-                />
-              </svg>
-            </div>
-            <h3 class="tech-name">Git</h3>
-            <p class="tech-desc">Контроль версій, гілки, merge, GitHub Actions</p>
-            <div class="tech-badge">✓ Встановлено</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Можливості</span>
-          <h2 class="section-title" id="feat-title">Що реалізовано</h2>
-          <p class="section-desc">Огляд усіх виконаних завдань лабораторної роботи</p>
-        </div>
-        <div class="features-list" id="features-list">
-          <div class="feature-item" id="feat-1">
-            <div class="feature-check">✓</div>
-            <div class="feature-content">
-              <h3>Перевірка підтримки інструментів</h3>
-              <p>Node v24, npm v11, Git v2.55, TypeScript — всі встановлені та перевірені</p>
-            </div>
-          </div>
-          <div class="feature-item" id="feat-2">
-            <div class="feature-check">✓</div>
-            <div class="feature-content">
-              <h3>ESLint + Prettier</h3>
-              <p>Налаштовані правила лінтингу та форматування, інтегровані в проєкт</p>
-            </div>
-          </div>
-          <div class="feature-item" id="feat-3">
-            <div class="feature-check">✓</div>
-            <div class="feature-content">
-              <h3>Статичний веб-проєкт</h3>
-              <p>index.html, styles.css, script.ts, README.md — повний набір файлів</p>
-            </div>
-          </div>
-          <div class="feature-item" id="feat-4">
-            <div class="feature-check">✓</div>
-            <div class="feature-content">
-              <h3>AI-агент налаштований</h3>
-              <p>AGENTS.md з правилами проєкту та SKILL.md для повторного використання</p>
-            </div>
-          </div>
-          <div class="feature-item" id="feat-5">
-            <div class="feature-check">✓</div>
-            <div class="feature-content">
-              <h3>GitHub Pages</h3>
-              <p>Репозиторій підключено, GitHub Pages увімкнено, публічне посилання отримано</p>
-            </div>
-          </div>
-          <div class="feature-item" id="feat-6">
-            <div class="feature-check">✓</div>
-            <div class="feature-content">
-              <h3>Vercel Deployment</h3>
-              <p>Репозиторій підключено до Vercel, автоматичний CI/CD налаштований</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Demo Section -->
-    <section class="demo" id="demo">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Інтерактив</span>
-          <h2 class="section-title" id="demo-title">Живе демо</h2>
-          <p class="section-desc">Інтерактивні елементи для демонстрації JavaScript/TypeScript</p>
-        </div>
-        <div class="demo-grid" id="demo-grid">
-          <!-- Counter -->
-          <div class="demo-card" id="demo-counter">
-            <h3 class="demo-card-title">⚡ Лічильник</h3>
-            <div class="counter-display" id="counter-display">0</div>
-            <div class="counter-controls">
-              <button class="counter-btn btn-decrement" id="btn-decrement" aria-label="Зменшити">
-                −
-              </button>
-              <button class="counter-btn btn-reset" id="btn-reset" aria-label="Скинути">↺</button>
-              <button class="counter-btn btn-increment" id="btn-increment" aria-label="Збільшити">
-                +
-              </button>
-            </div>
-          </div>
-
-          <!-- Color Theme -->
-          <div class="demo-card" id="demo-theme">
-            <h3 class="demo-card-title">🎨 Тема</h3>
-            <p class="demo-card-desc">Перемкніть кольорову тему сторінки</p>
-            <div class="theme-swatches" id="theme-swatches">
-              <button
-                class="swatch swatch-purple active"
-                id="swatch-purple"
-                data-theme="purple"
-                title="Фіолетовий"
-              ></button>
-              <button
-                class="swatch swatch-blue"
-                id="swatch-blue"
-                data-theme="blue"
-                title="Синій"
-              ></button>
-              <button
-                class="swatch swatch-emerald"
-                id="swatch-emerald"
-                data-theme="emerald"
-                title="Смарагдовий"
-              ></button>
-              <button
-                class="swatch swatch-rose"
-                id="swatch-rose"
-                data-theme="rose"
-                title="Рожевий"
-              ></button>
-              <button
-                class="swatch swatch-amber"
-                id="swatch-amber"
-                data-theme="amber"
-                title="Янтарний"
-              ></button>
-            </div>
-          </div>
-
-          <!-- Clock -->
-          <div class="demo-card" id="demo-clock">
-            <h3 class="demo-card-title">🕐 Годинник</h3>
-            <div class="clock-display" id="clock-display">
-              <span id="clock-time">--:--:--</span>
-            </div>
-            <p class="clock-date" id="clock-date">Завантаження...</p>
-          </div>
-
-          <!-- TypeScript Demo -->
-          <div class="demo-card" id="demo-ts">
-            <h3 class="demo-card-title">📝 TypeScript</h3>
-            <p class="demo-card-desc">Введіть своє ім'я для привітання</p>
-            <div class="ts-input-group">
-              <input
-                type="text"
-                id="ts-name-input"
-                class="ts-input"
-                placeholder="Ваше ім'я..."
-                maxlength="30"
-                aria-label="Введіть ім'я"
-              />
-              <button class="btn btn-primary btn-sm" id="ts-greet-btn">Привіт!</button>
-            </div>
-            <div class="ts-output" id="ts-output">👋 Введіть ім'я вище</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <span class="logo-icon">⚡</span>
-            <span>Lab<span class="accent">1</span> CSS</span>
-          </div>
-          <p class="footer-text">Виконано як лабораторна робота з веб-технологій · 2026</p>
-          <div class="footer-links">
+      <section id="deploy">
+        <h2>Розгортання</h2>
+        <ul>
+          <li>
+            GitHub:
             <a
-              href="https://github.com"
+              href="https://github.com/dmytrovasyliuk-star/CBHTMLCSS"
               target="_blank"
               rel="noopener noreferrer"
-              id="footer-gh"
-              class="footer-link"
-              >GitHub</a
+              >dmytrovasyliuk-star/CBHTMLCSS</a
             >
-            <span class="footer-sep">·</span>
-            <a
-              href="https://vercel.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="footer-vr"
-              class="footer-link"
-              >Vercel</a
-            >
-            <span class="footer-sep">·</span>
-            <a href="#hero" id="footer-top" class="footer-link">Вгору ↑</a>
-          </div>
-        </div>
-      </div>
+          </li>
+          <li>GitHub Pages: увімкнено</li>
+          <li>Vercel: підключено</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Лабораторна робота №1 · 2026</p>
     </footer>
 
     <script src="script.js"></script>
