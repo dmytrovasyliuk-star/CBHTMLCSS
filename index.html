@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Лабораторна робота №1 з веб-технологій" />
+    <meta name="description" content="Лабораторна робота №1 — Веб-технології" />
     <title>Lab 1 — Веб-технології</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">Про проєкт</a></li>
+        <li><a href="#stack">Стек</a></li>
+        <li><a href="#demo">Демо</a></li>
+        <li><a href="#deploy">Деплой</a></li>
+      </ul>
+    </nav>
+
     <header>
       <h1>Лабораторна робота №1</h1>
       <p>Веб-технології · 3 курс · 2026</p>
@@ -17,53 +26,40 @@
       <section id="about">
         <h2>Про проєкт</h2>
         <p>
-          Статичний веб-проєкт, виконаний у межах лабораторної роботи з курсу «Веб-технології».
-          Використано HTML5, CSS3, TypeScript, ESLint та Prettier.
+          Статичний веб-проєкт із HTML5, CSS3, TypeScript, ESLint і Prettier. Розгорнуто на GitHub
+          Pages та Vercel.
         </p>
       </section>
 
       <section id="stack">
-        <h2>Технологічний стек</h2>
+        <h2>Стек</h2>
         <ul>
-          <li><strong>HTML5</strong> — семантична розмітка</li>
-          <li><strong>CSS3</strong> — стилізація, змінні, адаптивність</li>
-          <li><strong>TypeScript</strong> — статична типізація</li>
-          <li><strong>ESLint</strong> — аналіз коду</li>
-          <li><strong>Prettier</strong> — форматування</li>
-          <li><strong>Git</strong> — контроль версій</li>
-        </ul>
-      </section>
-
-      <section id="tools">
-        <h2>Версії інструментів</h2>
-        <ul>
-          <li>Node.js v24.14.1</li>
-          <li>npm v11.11.0</li>
-          <li>Git v2.55.0</li>
-          <li>TypeScript v7.0.2</li>
-          <li>ESLint v10.10.0</li>
-          <li>Prettier v3.9.7</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>TypeScript 7</li>
+          <li>ESLint 10</li>
+          <li>Prettier 3</li>
+          <li>Git 2.55</li>
         </ul>
       </section>
 
       <section id="demo">
-        <h2>Демо: лічильник</h2>
-        <p id="counter-value">0</p>
-        <div id="counter-controls">
-          <button id="btn-dec">−</button>
-          <button id="btn-reset">Скинути</button>
+        <h2>Демо</h2>
+        <div id="info-block">
+          <p id="info-text">Натисніть кнопку, щоб змінити текст.</p>
+        </div>
+        <button id="main-btn">Змінити текст</button>
+        <div id="counter-block">
+          <span>Лічильник:</span>
+          <strong id="count">0</strong>
           <button id="btn-inc">+</button>
+          <button id="btn-dec">−</button>
+          <button id="btn-reset">↺</button>
         </div>
       </section>
 
-      <section id="clock-section">
-        <h2>Поточний час</h2>
-        <p id="clock">--:--:--</p>
-        <p id="date-display"></p>
-      </section>
-
       <section id="deploy">
-        <h2>Розгортання</h2>
+        <h2>Деплой</h2>
         <ul>
           <li>
             GitHub:
@@ -81,7 +77,7 @@
     </main>
 
     <footer>
-      <p>Лабораторна робота №1 · 2026</p>
+      <p>Lab 1 · 2026</p>
     </footer>
 
     <script src="script.js"></script>

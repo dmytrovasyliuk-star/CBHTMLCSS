@@ -1,12 +1,12 @@
-/* styles.css — Lab 1 */
-
 :root {
-  --bg: #ffffff;
-  --text: #1a1a1a;
-  --muted: #555555;
-  --accent: #2563eb;
-  --border: #e5e7eb;
-  --font: system-ui, Arial, sans-serif;
+  --bg: #0f0e17;
+  --surface: #1a1828;
+  --border: #2e2a45;
+  --accent: #7c3aed;
+  --accent-light: #a78bfa;
+  --text: #e8e6f0;
+  --muted: #9490b0;
+  --nav-h: 52px;
 }
 
 * {
@@ -15,27 +15,65 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: var(--font);
+  font-family: system-ui, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
 }
 
-/* Header */
-header {
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+nav a:hover {
+  color: var(--accent-light);
+}
+
+header,
+main,
+footer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
 }
 
 header h1 {
   font-size: 1.75rem;
   font-weight: 700;
+  color: var(--accent-light);
 }
 
 header p {
@@ -43,16 +81,16 @@ header p {
   margin-top: 0.25rem;
 }
 
-/* Sections */
 section {
-  margin-bottom: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
 }
 
 h2 {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--text);
+  color: var(--accent-light);
+  margin-bottom: 0.75rem;
 }
 
 p {
@@ -66,62 +104,91 @@ ul {
 }
 
 ul li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 a {
-  color: var(--accent);
+  color: var(--accent-light);
   text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: none;
-}
-
-/* Counter */
-#counter-value {
-  font-size: 3rem;
-  font-weight: 700;
   color: var(--text);
-  margin-bottom: 0.75rem;
 }
 
-#counter-controls {
-  display: flex;
-  gap: 0.5rem;
+#info-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#info-block p {
+  color: var(--text);
+}
+
+#info-block.active {
+  border-left-color: var(--accent-light);
+  background: #231f3a;
 }
 
 button {
   padding: 0.4rem 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 4px;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
 }
 
 button:hover {
   background: var(--border);
+  border-color: var(--accent);
 }
 
-/* Clock */
-#clock {
-  font-size: 2rem;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-  color: var(--text);
+#main-btn {
+  margin-bottom: 1.25rem;
+  border-color: var(--accent);
+  color: var(--accent-light);
 }
 
-#date-display {
+#counter-block {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   color: var(--muted);
-  margin-top: 0.25rem;
 }
 
-/* Footer */
+#count {
+  font-size: 1.25rem;
+  color: var(--accent-light);
+  min-width: 2rem;
+  text-align: center;
+}
+
 footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
   color: var(--muted);
-  font-size: 0.875rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  #counter-block {
+    flex-wrap: wrap;
+  }
 }

@@ -1,83 +1,37 @@
-/**
- * script.ts — Lab 1
- * Мінімальна інтерактивність: лічильник і годинник.
- */
+const infoText = document.getElementById("info-text");
+const infoBlock = document.getElementById("info-block");
+const mainBtn = document.getElementById("main-btn");
+const countEl = document.getElementById("count");
+const btnInc = document.getElementById("btn-inc");
+const btnDec = document.getElementById("btn-dec");
+const btnReset = document.getElementById("btn-reset");
 
-// ── Counter ───────────────────────────────────────────────────────────────────
+let toggled = false;
+let count = 0;
 
-function initCounter(): void {
-  let count = 0;
-  const display = document.getElementById("counter-value");
-  const btnInc = document.getElementById("btn-inc");
-  const btnDec = document.getElementById("btn-dec");
-  const btnReset = document.getElementById("btn-reset");
-
-  if (!display) {
-    return;
+mainBtn?.addEventListener("click", () => {
+  toggled = !toggled;
+  if (infoText) {
+    infoText.textContent = toggled
+      ? "Текст змінено! Натисніть ще раз, щоб повернути."
+      : "Натисніть кнопку, щоб змінити текст.";
   }
+  infoBlock?.classList.toggle("active", toggled);
+});
 
-  function render(): void {
-    if (display) {
-      display.textContent = count.toString();
-    }
-  }
-
-  btnInc?.addEventListener("click", () => {
-    count += 1;
-    render();
-  });
-  btnDec?.addEventListener("click", () => {
-    count -= 1;
-    render();
-  });
-  btnReset?.addEventListener("click", () => {
-    count = 0;
-    render();
-  });
+function render(): void {
+  if (countEl) countEl.textContent = count.toString();
 }
 
-// ── Clock ─────────────────────────────────────────────────────────────────────
-
-function initClock(): void {
-  const clockEl = document.getElementById("clock");
-  const dateEl = document.getElementById("date-display");
-
-  if (!clockEl) {
-    return;
-  }
-
-  function pad(n: number): string {
-    return n.toString().padStart(2, "0");
-  }
-
-  function tick(): void {
-    const now = new Date();
-    if (clockEl) {
-      clockEl.textContent = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
-    }
-    if (dateEl) {
-      dateEl.textContent = now.toLocaleDateString("uk-UA", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      });
-    }
-  }
-
-  tick();
-  setInterval(tick, 1000);
-}
-
-// ── Init ──────────────────────────────────────────────────────────────────────
-
-function main(): void {
-  initCounter();
-  initClock();
-}
-
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", main);
-} else {
-  main();
-}
+btnInc?.addEventListener("click", () => {
+  count += 1;
+  render();
+});
+btnDec?.addEventListener("click", () => {
+  count -= 1;
+  render();
+});
+btnReset?.addEventListener("click", () => {
+  count = 0;
+  render();
+});
