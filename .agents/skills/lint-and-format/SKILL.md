@@ -64,13 +64,13 @@ Files checked: script.js, index.html, styles.css, .prettierrc.json
 
 ## Failure Handling
 
-| Error                          | Fix                                              |
-|--------------------------------|--------------------------------------------------|
-| ESLint `no-unused-vars`        | Remove unused variable or prefix with `_`        |
-| ESLint `prefer-const`          | Change `let` → `const`                          |
-| ESLint `eqeqeq`                | Change `==` → `===`                             |
-| Prettier "file not formatted"  | Run `prettier --write` on that file             |
-| Parse error in eslint.config   | Ensure `"type": "module"` in `package.json`     |
+| Error                         | Fix                                         |
+| ----------------------------- | ------------------------------------------- |
+| ESLint `no-unused-vars`       | Remove unused variable or prefix with `_`   |
+| ESLint `prefer-const`         | Change `let` → `const`                      |
+| ESLint `eqeqeq`               | Change `==` → `===`                         |
+| Prettier "file not formatted" | Run `prettier --write` on that file         |
+| Parse error in eslint.config  | Ensure `"type": "module"` in `package.json` |
 
 ## Notes
 

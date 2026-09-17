@@ -86,10 +86,7 @@ function initNavbar(): void {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           links.forEach((l) => {
-            l.classList.toggle(
-              "active",
-              l.getAttribute("href") === `#${entry.target.id}`
-            );
+            l.classList.toggle("active", l.getAttribute("href") === `#${entry.target.id}`);
           });
         }
       });
@@ -103,9 +100,7 @@ function initNavbar(): void {
 // ── Scroll Reveal ─────────────────────────────────────────────────────────────
 
 function initScrollReveal(): void {
-  const els = document.querySelectorAll<HTMLElement>(
-    ".tech-card, .feature-item, .demo-card"
-  );
+  const els = document.querySelectorAll<HTMLElement>(".tech-card, .feature-item, .demo-card");
 
   els.forEach((el) => el.classList.add("reveal"));
 
@@ -207,9 +202,7 @@ function initThemeSwitcher(): void {
   try {
     const saved = sessionStorage.getItem("lab1-theme") as Theme | null;
     if (saved && THEMES[saved]) {
-      document
-        .querySelector<HTMLButtonElement>(`.swatch-${saved}`)
-        ?.click();
+      document.querySelector<HTMLButtonElement>(`.swatch-${saved}`)?.click();
     }
   } catch {
     // Storage not available
@@ -224,15 +217,7 @@ function initClock(): void {
 
   if (!timeEl || !dateEl) return;
 
-  const DAYS_UK = [
-    "Неділя",
-    "Понеділок",
-    "Вівторок",
-    "Середа",
-    "Четвер",
-    "П'ятниця",
-    "Субота",
-  ];
+  const DAYS_UK = ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"];
   const MONTHS_UK = [
     "січня",
     "лютого",

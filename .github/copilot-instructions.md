@@ -58,7 +58,9 @@ any; // avoid TypeScript `any`
 // ✅ Do this instead
 const x = 1;
 const el = document.getElementById("foo");
-if (el) { el.textContent = sanitize(userInput); }
+if (el) {
+  el.textContent = sanitize(userInput);
+}
 element.classList.add("active");
 ```
 

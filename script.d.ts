@@ -4,16 +4,16 @@
  * Compiled to script.js via tsc.
  */
 interface StatConfig {
-    targetEl: HTMLElement;
-    target: number;
-    suffix?: string;
-    duration?: number;
+  targetEl: HTMLElement;
+  target: number;
+  suffix?: string;
+  duration?: number;
 }
 interface ThemeConfig {
-    name: string;
-    h: number;
-    s: string;
-    l: string;
+  name: string;
+  h: number;
+  s: string;
+  l: string;
 }
 type Theme = "purple" | "blue" | "emerald" | "rose" | "amber";
 declare const THEMES: Record<Theme, ThemeConfig>;
@@ -26,8 +26,8 @@ declare function initCounter(): void;
 declare function initThemeSwitcher(): void;
 declare function initClock(): void;
 interface GreeterOptions {
-    name: string;
-    lang?: string;
+  name: string;
+  lang?: string;
 }
 declare function greet(opts: GreeterOptions): string;
 declare function initGreeter(): void;

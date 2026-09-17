@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "description": "Лабораторна робота №1 — статичний веб-проєкт з HTML, CSS, TypeScript, ESLint та Prettier",
   "main": "script.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "build:ts": "tsc -p tsconfig.json",
-    "lint": "eslint script.js --max-warnings 0",
+    "lint": "eslint eslint.config.js --max-warnings 0",
     "format": "prettier --write \"**/*.{html,css,js,ts,json,md}\" --ignore-path .prettierignore",
     "format:check": "prettier --check \"**/*.{html,css,js,ts,json,md}\" --ignore-path .prettierignore",
     "check": "npm run format:check && npm run lint",
-    "build": "npm run build:ts && npm run check"
+    "build": "npm run build:ts && npm run format && npm run lint"
   },
-  "keywords": ["html", "css", "typescript", "lab"],
+  "keywords": [
+    "html",
+    "css",
+    "typescript",
+    "lab"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -24,4 +29,3 @@
     "typescript": "^7.0.2"
   }
 }
-

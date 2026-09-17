@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -51,8 +51,8 @@
           Сучасний<br /><span class="gradient-text">веб-проєкт</span>
         </h1>
         <p class="hero-description" id="hero-desc">
-          Демонстрація HTML5, CSS3, TypeScript, ESLint, Prettier, GitHub Pages та Vercel у межах однієї
-          лабораторної роботи з веб-технологій.
+          Демонстрація HTML5, CSS3, TypeScript, ESLint, Prettier, GitHub Pages та Vercel у межах
+          однієї лабораторної роботи з веб-технологій.
         </p>
         <div class="hero-buttons">
           <a href="#technologies" class="btn btn-primary" id="btn-explore">Дослідити</a>
@@ -99,17 +99,47 @@
             <span class="window-title">script.ts</span>
           </div>
           <div class="window-body">
-            <div class="code-line"><span class="code-keyword">interface</span> <span class="code-type">Project</span> <span class="code-bracket">{</span></div>
-            <div class="code-line code-indent"><span class="code-prop">name</span><span class="code-punct">:</span> <span class="code-type">string</span><span class="code-punct">;</span></div>
-            <div class="code-line code-indent"><span class="code-prop">tech</span><span class="code-punct">:</span> <span class="code-type">string</span><span class="code-punct">[];</span></div>
-            <div class="code-line code-indent"><span class="code-prop">year</span><span class="code-punct">:</span> <span class="code-type">number</span><span class="code-punct">;</span></div>
+            <div class="code-line">
+              <span class="code-keyword">interface</span> <span class="code-type">Project</span>
+              <span class="code-bracket">{</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="code-prop">name</span><span class="code-punct">:</span>
+              <span class="code-type">string</span><span class="code-punct">;</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="code-prop">tech</span><span class="code-punct">:</span>
+              <span class="code-type">string</span><span class="code-punct">[];</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="code-prop">year</span><span class="code-punct">:</span>
+              <span class="code-type">number</span><span class="code-punct">;</span>
+            </div>
             <div class="code-line"><span class="code-bracket">}</span></div>
             <div class="code-line">&nbsp;</div>
-            <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">lab</span><span class="code-punct">:</span> <span class="code-type">Project</span> <span class="code-punct">=</span> <span class="code-bracket">{</span></div>
-            <div class="code-line code-indent"><span class="code-prop">name</span><span class="code-punct">:</span> <span class="code-string">"Lab1"</span><span class="code-punct">,</span></div>
-            <div class="code-line code-indent"><span class="code-prop">tech</span><span class="code-punct">:</span> <span class="code-bracket">[</span><span class="code-string">"HTML"</span><span class="code-punct">,</span> <span class="code-string">"CSS"</span><span class="code-punct">,</span> <span class="code-string">"TS"</span><span class="code-bracket">]</span><span class="code-punct">,</span></div>
-            <div class="code-line code-indent"><span class="code-prop">year</span><span class="code-punct">:</span> <span class="code-number">2026</span></div>
-            <div class="code-line"><span class="code-bracket">}</span><span class="code-punct">;</span></div>
+            <div class="code-line">
+              <span class="code-keyword">const</span> <span class="code-var">lab</span
+              ><span class="code-punct">:</span> <span class="code-type">Project</span>
+              <span class="code-punct">=</span> <span class="code-bracket">{</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="code-prop">name</span><span class="code-punct">:</span>
+              <span class="code-string">"Lab1"</span><span class="code-punct">,</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="code-prop">tech</span><span class="code-punct">:</span>
+              <span class="code-bracket">[</span><span class="code-string">"HTML"</span
+              ><span class="code-punct">,</span> <span class="code-string">"CSS"</span
+              ><span class="code-punct">,</span> <span class="code-string">"TS"</span
+              ><span class="code-bracket">]</span><span class="code-punct">,</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="code-prop">year</span><span class="code-punct">:</span>
+              <span class="code-number">2026</span>
+            </div>
+            <div class="code-line">
+              <span class="code-bracket">}</span><span class="code-punct">;</span>
+            </div>
           </div>
         </div>
       </div>
@@ -274,9 +304,13 @@
             <h3 class="demo-card-title">⚡ Лічильник</h3>
             <div class="counter-display" id="counter-display">0</div>
             <div class="counter-controls">
-              <button class="counter-btn btn-decrement" id="btn-decrement" aria-label="Зменшити">−</button>
+              <button class="counter-btn btn-decrement" id="btn-decrement" aria-label="Зменшити">
+                −
+              </button>
               <button class="counter-btn btn-reset" id="btn-reset" aria-label="Скинути">↺</button>
-              <button class="counter-btn btn-increment" id="btn-increment" aria-label="Збільшити">+</button>
+              <button class="counter-btn btn-increment" id="btn-increment" aria-label="Збільшити">
+                +
+              </button>
             </div>
           </div>
 
@@ -285,11 +319,36 @@
             <h3 class="demo-card-title">🎨 Тема</h3>
             <p class="demo-card-desc">Перемкніть кольорову тему сторінки</p>
             <div class="theme-swatches" id="theme-swatches">
-              <button class="swatch swatch-purple active" id="swatch-purple" data-theme="purple" title="Фіолетовий"></button>
-              <button class="swatch swatch-blue" id="swatch-blue" data-theme="blue" title="Синій"></button>
-              <button class="swatch swatch-emerald" id="swatch-emerald" data-theme="emerald" title="Смарагдовий"></button>
-              <button class="swatch swatch-rose" id="swatch-rose" data-theme="rose" title="Рожевий"></button>
-              <button class="swatch swatch-amber" id="swatch-amber" data-theme="amber" title="Янтарний"></button>
+              <button
+                class="swatch swatch-purple active"
+                id="swatch-purple"
+                data-theme="purple"
+                title="Фіолетовий"
+              ></button>
+              <button
+                class="swatch swatch-blue"
+                id="swatch-blue"
+                data-theme="blue"
+                title="Синій"
+              ></button>
+              <button
+                class="swatch swatch-emerald"
+                id="swatch-emerald"
+                data-theme="emerald"
+                title="Смарагдовий"
+              ></button>
+              <button
+                class="swatch swatch-rose"
+                id="swatch-rose"
+                data-theme="rose"
+                title="Рожевий"
+              ></button>
+              <button
+                class="swatch swatch-amber"
+                id="swatch-amber"
+                data-theme="amber"
+                title="Янтарний"
+              ></button>
             </div>
           </div>
 
@@ -331,13 +390,25 @@
             <span class="logo-icon">⚡</span>
             <span>Lab<span class="accent">1</span> CSS</span>
           </div>
-          <p class="footer-text">
-            Виконано як лабораторна робота з веб-технологій · 2026
-          </p>
+          <p class="footer-text">Виконано як лабораторна робота з веб-технологій · 2026</p>
           <div class="footer-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" id="footer-gh" class="footer-link">GitHub</a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="footer-gh"
+              class="footer-link"
+              >GitHub</a
+            >
             <span class="footer-sep">·</span>
-            <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" id="footer-vr" class="footer-link">Vercel</a>
+            <a
+              href="https://vercel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="footer-vr"
+              class="footer-link"
+              >Vercel</a
+            >
             <span class="footer-sep">·</span>
             <a href="#hero" id="footer-top" class="footer-link">Вгору ↑</a>
           </div>
